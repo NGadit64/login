@@ -17,10 +17,12 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     EditText edNama;
     EditText edPassword;
+    EditText edConfPassword;
     Button btnLogin;
 
 
    // @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,13 +30,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //sambungkan ke xml
-        edNama = (EditText) findViewById(R.id.edNama);
-        edPassword = (EditText) findViewById(R.id.edPassword);
-        btnLogin = (Button) findViewById(R.id.btnLogin);
+        edNama = findViewById(R.id.edNama);
+        edPassword = findViewById(R.id.edPassword);
+        edConfPassword = findViewById(R.id.edConfPassword);
+        btnLogin = findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (edNama.getText().toString().equals("admin") && edPassword.getText().toString().equals("admin123"))
+                if (edNama.getText().toString().equals("admin") && edPassword.getText().toString().equals("admin123")&&edConfPassword.getText().toString().equals("admin123"))
                 {
                     Toast.makeText(MainActivity.this, "login berhasil", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, kalkulator.class);
