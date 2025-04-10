@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kalkulator"
+    android:orientation="vertical"
+    android:background="@color/material_dynamic_tertiary90">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="60dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/material_dynamic_primary10"/>
+
+    <EditText
+        android:id="@+id/edAngka1"
+        android:layout_width="569dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Number 1"
+        android:layout_marginTop="30dp"
+        android:textSize="32dp"
+        android:layout_marginLeft="13dp"
+        />
+
+    <EditText
+        android:id="@+id/edAngka2"
+        android:layout_width="569dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:hint="Number 2"
+        android:textSize="32dp"
+        android:layout_marginLeft="13dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginTop="67px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="Plus"
+            android:textSize="100px" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="Minus"
+            android:textSize="100px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="Multiple"
+            android:textSize="100px" />
+
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="Divide"
+            android:textSize="100px" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Result"
+        android:inputType="number"
+        android:textSize="180px"
+        android:textColor="@color/material_dynamic_secondary10"/>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:text="Reset"
+        android:layout_margin="20dp"
+        android:textSize="50dp"
+        android:textColor="@color/material_dynamic_neutral10"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>
